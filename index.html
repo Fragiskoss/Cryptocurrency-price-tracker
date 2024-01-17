@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptocurrency Price Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cryptoContainer">
+      <h1>Cryptocurrency Price</h1>
+      <form id="cryptoForm">
+        <select id="cryptoSymbol">
+          <option value="" disabled selected>Select a Cryptocurrency</option>
+        </select>
+        <button type="submit">Refresh</button>
+      </form>
+      <div id="cryptoInfo">
+        <p>Price: <span id="price"></span></p>
+        <p>Market Cap: <span id="marketCap"></span></p>
+        <p>24h Volume: <span id="volume"></span></p>
+        <p>24h Change: <span id="change24h"></span></p>
+      </div>
+      <p id="error"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

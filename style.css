@@ -1,0 +1,84 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-image: url("pexels-jeremy-bishop-2923595.jpg");
+  color: #ffffff68;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0;
+}
+
+#cryptoContainer {
+  background: rgba(255, 255, 255, 0.019);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.038);
+  border-radius: 20px;
+}
+
+#cryptoForm select,
+#cryptoForm button {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: none;
+  width: 90%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#cryptoForm select {
+  background-color: #2c5364;
+  color: white;
+  font-size: 1.1em;
+}
+
+button {
+  background-color: #26a69a;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #1e8c75;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#cryptoInfo p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+#cryptoInfo span {
+  color: #26a69a;
+  font-weight: bold;
+}
+
+#error {
+  color: #ff6b6b;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  #cryptoContainer {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  #cryptoForm select,
+  #cryptoForm button {
+    width: calc(100% - 40px);
+  }
+}
